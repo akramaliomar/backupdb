@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+ app:
+    image: 'akramomar/akram_rasa_sdk:1.0.1'
+    volumes:
+      - './actions:/app/actions'
+    expose:
+      - '5055'
+    depends_on:
+      - rasa-production
